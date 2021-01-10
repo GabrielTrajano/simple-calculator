@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">    <script src="script.js" defer></script>
+    <title>Caculadora</title>
+</head>
+<body>
+    <div class="calculator">
+        <form name="form" class="display">
+            <input type="text" id="display-numbers" placeholder="0" disabled>
+        </form>
+        <div class="keyword">
+            <div class="column">
+                <button class="button clear-button" onclick="toClean()">C</button>
+                <button class="button" onclick="captureNumber(9)">9</button>
+                <button class="button" onclick="captureNumber(6)">6</button>
+                <button class="button" onclick="captureNumber(3)">3</button>
+            </div>
+            <div class="column">
+                <button class="button operator" onclick="captureNumber('/')">/</button>
+                <button class="button" onclick="captureNumber(8)">8</button>
+                <button class="button" onclick="captureNumber(5)">5</button>
+                <button class="button" onclick="captureNumber(2)">2</button>
+                <button class="button" onclick="captureNumber(0)">0</button>
+            </div>
+            <div class="column">
+                <button class="button operator" onclick="captureNumber('*')">*</button>
+                <button class="button" onclick="captureNumber(7)">7</button>
+                <button class="button" onclick="captureNumber(4)">4</button>
+                <button class="button" onclick="captureNumber(1)">1</button>
+                <button class="button operator" onclick="toBack()"><</button>
+            </div>
+            <div class="column">
+                <button class="button operator" onclick="captureNumber('-')">-</button>
+                <button class="button operator" onclick="captureNumber('+')">+</button>
+                <button class="button operator" onclick="captureNumber('.')">.</button>
+                <button class="button equal" onclick="total()">=</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
